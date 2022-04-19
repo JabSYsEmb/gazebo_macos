@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -10,11 +10,11 @@ import "time.proto";
 
 message WorldStatistics
 {
-  required Time  sim_time                           = 2;
-  required Time  pause_time                         = 3;
-  required Time  real_time                          = 4;
-  required bool  paused                             = 5;
-  required uint64 iterations                        = 6;
-  optional int32 model_count                        = 7;
-  optional LogPlaybackStatistics log_playback_stats = 8;
+   Time  sim_time                           = 2;
+   Time  pause_time                         = 3;
+   Time  real_time                          = 4;
+   bool  paused                             = 5;
+   uint64 iterations                        = 6;
+   int32 model_count                        = 7;
+   LogPlaybackStatistics log_playback_stats = 8;
 }

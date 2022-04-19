@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -11,6 +11,6 @@ import "sonar.proto";
 message SonarStamped
 {
   // Time when the data was captured
-  required Time time       = 1;
-  required Sonar sonar     = 2;
+   Time time       = 1;
+   Sonar sonar     = 2;
 }

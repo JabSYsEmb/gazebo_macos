@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs Messages
@@ -9,13 +9,13 @@ import "vector3d.proto";
 
 message Axis
 {
-  required Vector3d xyz                = 1;
-  required double limit_lower          = 2;
-  required double limit_upper          = 3;
-  required double limit_effort         = 4;
-  required double limit_velocity       = 5;
-  required double damping              = 6;
-  required double friction             = 7;
-  required bool use_parent_model_frame = 8[deprecated = true];
-  required string xyz_expressed_in     = 9;
+   Vector3d xyz                = 1;
+   double limit_lower          = 2;
+   double limit_upper          = 3;
+   double limit_effort         = 4;
+   double limit_velocity       = 5;
+   double damping              = 6;
+   double friction             = 7;
+   bool use_parent_model_frame = 8[deprecated = true];
+   string xyz_expressed_in     = 9;
 }

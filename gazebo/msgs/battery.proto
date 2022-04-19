@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -8,8 +8,8 @@ package gazebo.msgs;
 message Battery
 {
   /// \brief Name of the battery
-  required string name    = 1;
+   string name    = 1;
 
   /// \brief Real voltage in volts.
-  required double voltage = 2;
+   double voltage = 2;
 }

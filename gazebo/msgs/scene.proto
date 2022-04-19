@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -15,18 +15,18 @@ import "model.proto";
 
 message Scene
 {
-  required string name         = 1;
-  optional Color ambient       = 2;
-  optional Color background    = 3;
-  optional Sky sky             = 4;
-  optional bool shadows        = 5 [default = true];
-  optional Fog fog             = 6;
-  optional bool grid           = 7;
+   string name         = 1;
+   Color ambient       = 2;
+   Color background    = 3;
+   Sky sky             = 4;
+   bool shadows        = 5;
+   Fog fog             = 6;
+   bool grid           = 7;
 
   repeated Model model         = 8;
   repeated Light light         = 9;
   repeated Joint joint         = 10;
 
   /// \brief Show/hide world origin indicator.
-  optional bool origin_visual  = 11;
+   bool origin_visual  = 11;
 }

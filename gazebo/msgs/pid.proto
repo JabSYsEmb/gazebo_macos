@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -8,12 +8,12 @@ package gazebo.msgs;
 
 message PID
 {
-  optional double target = 1[default=0.0];
-  optional double p_gain = 2[default=0.0];
-  optional double i_gain = 3[default=0.0];
-  optional double d_gain = 4[default=0.0];
-  optional double i_max  = 5[default=0.0];
-  optional double i_min  = 6[default=0.0];
-  optional double limit  = 7[default=0.0];
+   double target = 1;
+   double p_gain = 2;
+   double i_gain = 3;
+   double d_gain = 4;
+   double i_max  = 5;
+   double i_min  = 6;
+   double limit  = 7;
 }
 

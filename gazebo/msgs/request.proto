@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -8,10 +8,10 @@ package gazebo.msgs;
 
 message Request
 {
-  required int32 id         = 1;
-  required string request   = 2;
-  optional string data      = 3;
-  optional double dbl_data  = 4;
+   int32 id         = 1;
+   string request   = 2;
+   string data      = 3;
+   double dbl_data  = 4;
 }
 
 

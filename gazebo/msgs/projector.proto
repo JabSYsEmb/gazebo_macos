@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -10,12 +10,12 @@ import "pose.proto";
 
 message Projector
 {
-  required string name          = 1;
-  optional string texture       = 2;
-  optional Pose pose            = 3;
-  optional double fov           = 4[default=0.785];
-  optional double near_clip     = 5[default=0.1];
-  optional double far_clip      = 6[default=10.0];
-  optional bool enabled         = 7[default=true];
+   string name          = 1;
+   string texture       = 2;
+   Pose pose            = 3;
+   double fov           = 4;
+   double near_clip     = 5;
+   double far_clip      = 6;
+   bool enabled         = 7;
 }
 

@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -9,7 +9,7 @@ package gazebo.msgs;
 message Int
 {
   /// Integer data
-  required int32 data = 1;
+   int32 data = 1;
 }
 
 

@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -10,17 +10,17 @@ import "friction.proto";
 
 message Surface
 {
-  optional Friction friction                = 1;
-  optional double restitution_coefficient   = 2;
-  optional double bounce_threshold          = 3;
-  optional double soft_cfm                  = 4;
-  optional double soft_erp                  = 5;
-  optional double kp                        = 6;
-  optional double kd                        = 7;
-  optional double max_vel                   = 8;
-  optional double min_depth                 = 9;
-  optional bool collide_without_contact     = 10;
-  optional uint32 collide_without_contact_bitmask = 11;
-  optional uint32 collide_bitmask           = 12;
-  optional double elastic_modulus           = 13;
+   Friction friction                = 1;
+   double restitution_coefficient   = 2;
+   double bounce_threshold          = 3;
+   double soft_cfm                  = 4;
+   double soft_erp                  = 5;
+   double kp                        = 6;
+   double kd                        = 7;
+   double max_vel                   = 8;
+   double min_depth                 = 9;
+   bool collide_without_contact     = 10;
+   uint32 collide_without_contact_bitmask = 11;
+   uint32 collide_bitmask           = 12;
+   double elastic_modulus           = 13;
 }

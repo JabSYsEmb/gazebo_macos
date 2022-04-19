@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 import "light.proto";
@@ -16,26 +16,26 @@ message UserCmd
   enum Type
   {
     /// \brief Moving an entity.
-    MOVING = 1;
+    MOVING = 0;
 
     /// \brief Controlling the world.
-    WORLD_CONTROL = 2;
+    WORLD_CONTROL = 1;
 
     /// \brief Applying wrench.
-    WRENCH = 3;
+    WRENCH = 2;
 
     /// \brief Scaling an entity.
-    SCALING = 4;
+    SCALING = 3;
   }
 
   /// \brief Unique id for user command.
-  optional uint32 id = 1;
+   uint32 id = 1;
 
   /// \brief Description for the command.
-  required string description = 2;
+   string description = 2;
 
   /// \brief Type of command.
-  required Type type = 3;
+   Type type = 3;
 
   /// \brief For model modify commands.
   repeated Model model = 4;
@@ -44,11 +44,11 @@ message UserCmd
   repeated Light light = 5;
 
   /// \brief Name of entity targeted by command
-  optional string entity_name = 6;
+   string entity_name = 6;
 
   /// \brief For World Control commands.
-  optional WorldControl world_control = 7;
+   WorldControl world_control = 7;
 
   /// \brief Wrench for apply wrench commands.
-  optional Wrench wrench = 8;
+   Wrench wrench = 8;
 }

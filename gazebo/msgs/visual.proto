@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -22,7 +22,7 @@ message Visual
     /// \brief The layer in which this visual is displayed. The layer number
     /// is useful for programs, such as Gazebo, that put visuals in different
     /// layers for enhanced visualization.
-    optional int32 layer       = 1;
+     int32 layer       = 1;
   }
 
   enum Type
@@ -45,26 +45,26 @@ message Visual
     PHYSICS =   7;
   }
 
-  required string name         = 1;
-  optional uint32 id           = 2;
-  required string parent_name  = 3;
-  optional uint32 parent_id    = 4;
-  optional bool cast_shadows   = 5;
-  optional double transparency = 6;
-  optional double laser_retro  = 7;
-  optional Pose pose           = 8;
-  optional Geometry geometry   = 9;
-  optional Material material   = 10;
+   string name         = 1;
+   uint32 id           = 2;
+   string parent_name  = 3;
+   uint32 parent_id    = 4;
+   bool cast_shadows   = 5;
+   double transparency = 6;
+   double laser_retro  = 7;
+   Pose pose           = 8;
+   Geometry geometry   = 9;
+   Material material   = 10;
 
-  optional bool visible        = 11;
-  optional bool delete_me      = 12;
-  optional bool is_static      = 13;
+   bool visible        = 11;
+   bool delete_me      = 12;
+   bool is_static      = 13;
   repeated Plugin plugin       = 14;
-  optional Vector3d scale      = 15;
+   Vector3d scale      = 15;
 
   /// \brief Option meta information associated with this visual.
-  optional Meta meta           = 16;
+   Meta meta           = 16;
 
   /// \brief Type of visual.
-  optional Type type           = 17;
+   Type type           = 17;
 }

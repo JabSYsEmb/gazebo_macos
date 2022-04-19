@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -9,7 +9,7 @@ import "any.proto";
 
 message Param
 {
-  required string name     = 1;
-  optional Any    value    = 2;
+   string name     = 1;
+   Any    value    = 2;
   repeated Param  children = 3;
 }

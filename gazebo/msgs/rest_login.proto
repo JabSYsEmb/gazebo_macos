@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -8,14 +8,14 @@ package gazebo.msgs;
 message RestLogin
 {
   /// \brief ID of this request message
-  optional uint32 id       = 1;
+   uint32 id       = 1;
 
   /// \brief Rest service URL
-  required string url      = 2;
+   string url      = 2;
 
   /// \brief Login user name
-  optional string username = 3;
+   string username = 3;
 
   /// \brief Login password
-  optional string password = 4;
+   string password = 4;
 }

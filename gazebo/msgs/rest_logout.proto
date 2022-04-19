@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -8,8 +8,8 @@ package gazebo.msgs;
 message RestLogout
 {
   /// \brief ID of this request message
-  optional uint32 id       = 1;
+   uint32 id       = 1;
 
   /// \brief the web service url
-  optional string url      = 2;
+   string url      = 2;
 }

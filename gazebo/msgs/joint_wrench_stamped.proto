@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -12,6 +12,6 @@ import "time.proto";
 message ForceTorque
 {
   repeated JointWrench wrench = 1;
-  required Time time          = 2;
+   Time time          = 2;
 }
 

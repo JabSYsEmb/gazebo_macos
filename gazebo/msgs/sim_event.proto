@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 import "world_stats.proto";
@@ -9,17 +9,17 @@ import "world_stats.proto";
 message SimEvent
 {
   /// \brief ID of this event message
-  optional uint32 id                        = 1;
+   uint32 id                        = 1;
 
   /// \brief Type of sim event
-  required string type                      = 2;
+   string type                      = 2;
 
   /// \brief Name of sim event
-  required string name                      = 3;
+   string name                      = 3;
 
   /// \brief Statistics of the world
-  required WorldStatistics world_statistics = 4;
+   WorldStatistics world_statistics = 4;
 
   /// \brief Data describing the sim event
-  optional string data                      = 5;
+   string data                      = 5;
 }

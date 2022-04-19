@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -8,8 +8,8 @@ package gazebo.msgs;
 
 message Publish
 {
-  required string topic    = 1;
-  required string msg_type = 2;
-  required string host     = 3;
-  required uint32 port     = 4;
+   string topic    = 1;
+   string msg_type = 2;
+   string host     = 3;
+   uint32 port     = 4;
 }

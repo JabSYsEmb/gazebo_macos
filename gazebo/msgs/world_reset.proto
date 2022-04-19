@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -8,9 +8,9 @@ package gazebo.msgs;
 
 message WorldReset
 {
-  optional bool all          = 1[default = true];
-  optional bool time_only    = 2[default = false];
-  optional bool model_only   = 3[default = false];
+   bool all          = 1;
+   bool time_only    = 2;
+   bool model_only   = 3;
 }
 
 

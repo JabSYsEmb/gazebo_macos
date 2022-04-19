@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -11,8 +11,8 @@ import "time.proto";
 message LogPlaybackStatistics
 {
   /// \brief Log start time
-  required Time start_time = 1;
+   Time start_time = 1;
 
   /// \brief Log end time
-  required Time end_time   = 2;
+   Time end_time   = 2;
 }

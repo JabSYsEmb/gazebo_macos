@@ -7,7 +7,7 @@
  *
  *     http://www.apache.org/licenses/LICENSE-2.0
  *
- * Unless required by applicable law or agreed to in writing, software
+ * Unless  by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
@@ -15,7 +15,7 @@
  *
 */
 
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -28,11 +28,11 @@ import "header.proto";
 message Twist
 {
     /// \brief Optional header data.
-    optional Header header          = 1;
+     Header header          = 1;
 
     /// \brief Lnear velocity in 3d space.
-    required Vector3d linear        = 2;
+     Vector3d linear        = 2;
 
     /// \brief Angular velocity in 3d space.
-    required Vector3d angular       = 3;
+     Vector3d angular       = 3;
 }

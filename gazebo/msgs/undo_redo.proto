@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -8,9 +8,9 @@ package gazebo.msgs;
 message UndoRedo
 {
   /// \brief True to undo, false to redo.
-  required bool undo = 1;
+   bool undo = 1;
 
   /// \brief Unique id of the user command. If this is provided, all commands
   /// leading to that will be undone / redone.
-  optional uint32 id = 2;
+   uint32 id = 2;
 }

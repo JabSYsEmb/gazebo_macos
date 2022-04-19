@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -7,5 +7,5 @@ package gazebo.msgs;
 
 message Empty
 {
-  optional bool unused = 1;
+   bool unused = 1;
 }

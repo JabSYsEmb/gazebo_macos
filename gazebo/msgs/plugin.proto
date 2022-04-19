@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -7,7 +7,7 @@ package gazebo.msgs;
 
 message Plugin
 {
-  required string name         = 1;
-  required string filename     = 2;
-  optional string innerxml     = 3 [default = ""];
+   string name         = 1;
+   string filename     = 2;
+   string innerxml     = 3;
 }

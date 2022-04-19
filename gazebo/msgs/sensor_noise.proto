@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -11,35 +11,35 @@ message SensorNoise
   enum Type
   {
     /// \brief No noise
-    NONE               = 1;
+    NONE               = 0;
 
     /// \brief Gaussian noise
-    GAUSSIAN           = 2;
+    GAUSSIAN           = 1;
 
     /// \brief Gaussian noise plus quantization of outputs (rounding)
-    GAUSSIAN_QUANTIZED = 3;
+    GAUSSIAN_QUANTIZED = 2;
   }
 
   /// \brief The type of noise
-  required Type type          = 1;
+   Type type          = 1;
 
   /// \brief Noise mean
   /// Used by GAUSSIAN, and GAUSSIAN_QUANTIZED
-  optional double mean        = 2;
+   double mean        = 2;
 
   /// \brief Noise standard deviation
   /// Used by GAUSSIAN, and GAUSSIAN_QUANTIZED
-  optional double stddev      = 3;
+   double stddev      = 3;
 
   /// \brief Noise mean bias
   /// Used by GAUSSIAN, and GAUSSIAN_QUANTIZED
-  optional double bias_mean   = 4;
+   double bias_mean   = 4;
 
   /// \brief Noise standard deviation bias
   /// Used by GAUSSIAN, and GAUSSIAN_QUANTIZED
-  optional double bias_stddev = 5;
+   double bias_stddev = 5;
 
   /// \brief Noise  precision.
   /// Used by GAUSSIAN_QUANTIZED
-  optional double precision   = 6;
+   double precision   = 6;
 }

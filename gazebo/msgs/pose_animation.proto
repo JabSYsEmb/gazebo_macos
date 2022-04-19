@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -11,8 +11,8 @@ import "time.proto";
 
 message PoseAnimation
 {
-  required string model_name      = 1;
-  optional uint32 model_id        = 2;
+   string model_name      = 1;
+   uint32 model_id        = 2;
   repeated Pose pose              = 3;
   repeated Time time              = 4;
 }

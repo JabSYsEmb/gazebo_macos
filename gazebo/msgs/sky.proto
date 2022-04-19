@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -10,14 +10,14 @@ import "color.proto";
 
 message Sky
 {
-  optional double time           = 1;
-  optional double sunrise        = 2;
-  optional double sunset         = 3;
+   double time           = 1;
+   double sunrise        = 2;
+   double sunset         = 3;
 
-  optional double wind_speed     = 4;
-  optional double wind_direction = 5;
-  optional Color cloud_ambient   = 6;
-  optional double humidity       = 7;
-  optional double mean_cloud_size = 8;
+   double wind_speed     = 4;
+   double wind_direction = 5;
+   Color cloud_ambient   = 6;
+   double humidity       = 7;
+   double mean_cloud_size = 8;
 }
 

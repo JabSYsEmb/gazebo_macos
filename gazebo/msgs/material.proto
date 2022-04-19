@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -12,24 +12,24 @@ message Material
 {
   enum ShaderType
   {
-    VERTEX                  = 1;
-    PIXEL                   = 2;
-    NORMAL_MAP_OBJECT_SPACE = 3;
-    NORMAL_MAP_TANGENT_SPACE = 4;
+    VERTEX                  = 0;
+    PIXEL                   = 1;
+    NORMAL_MAP_OBJECT_SPACE = 2;
+    NORMAL_MAP_TANGENT_SPACE = 3;
   }
 
   message Script
   {
     repeated string uri = 1;
-    required string name = 2;
+     string name = 2;
   }
 
-  optional Script script          = 1;
-  optional ShaderType shader_type = 2;
-  optional string normal_map      = 3;
-  optional Color ambient          = 4;
-  optional Color diffuse          = 5;
-  optional Color specular         = 6;
-  optional Color emissive         = 7;
-  optional bool lighting          = 8;
+   Script script          = 1;
+   ShaderType shader_type = 2;
+   string normal_map      = 3;
+   Color ambient          = 4;
+   Color diffuse          = 5;
+   Color specular         = 6;
+   Color emissive         = 7;
+   bool lighting          = 8;
 }

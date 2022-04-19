@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -11,8 +11,8 @@ import "quaternion.proto";
 
 message Pose
 {
-  optional string name            = 1;
-  optional uint32 id              = 2;
-  required Vector3d position      = 3;
-  required Quaternion orientation = 4;
+   string name            = 1;
+   uint32 id              = 2;
+   Vector3d position      = 3;
+   Quaternion orientation = 4;
 }

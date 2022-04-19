@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -13,31 +13,31 @@ message IMUSensor
   message AngularVelocity
   {
     /// \brief Noise about the x-axis
-    optional SensorNoise x_noise = 1;
+     SensorNoise x_noise = 1;
 
     /// \brief Noise about the y-axis
-    optional SensorNoise y_noise = 2;
+     SensorNoise y_noise = 2;
 
     /// \brief Noise about the z-axis
-    optional SensorNoise z_noise = 3;
+     SensorNoise z_noise = 3;
   }
 
   /// \brief Linear acceleration information
   message LinearAcceleration
   {
     /// \brief Noise about the x-axis
-    optional SensorNoise x_noise = 1;
+     SensorNoise x_noise = 1;
 
     /// \brief Noise about the y-axis
-    optional SensorNoise y_noise = 2;
+     SensorNoise y_noise = 2;
 
     /// \brief Noise about the z-axis
-    optional SensorNoise z_noise = 3;
+     SensorNoise z_noise = 3;
   }
 
   /// \brief Angular velocity information
-  optional AngularVelocity angular_velocity = 1;
+   AngularVelocity angular_velocity = 1;
 
   /// \brief Linear acceleration information
-  optional LinearAcceleration linear_acceleration = 2;
+   LinearAcceleration linear_acceleration = 2;
 }

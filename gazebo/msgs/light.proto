@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -13,26 +13,26 @@ import "color.proto";
 
 message Light
 {
-  required string name                   = 1;
+   string name                   = 1;
   enum LightType
   {
-    POINT       = 1;
-    SPOT        = 2;
-    DIRECTIONAL = 3;
+    POINT       = 0;
+    SPOT        = 1;
+    DIRECTIONAL = 2;
   }
-  optional LightType type                = 2;
+   LightType type                = 2;
 
-  optional Pose pose                     = 3;
-  optional Color diffuse                 = 4;
-  optional Color specular                = 5;
-  optional float attenuation_constant    = 6;
-  optional float attenuation_linear      = 7;
-  optional float attenuation_quadratic   = 8;
-  optional Vector3d direction               = 9;
-  optional float range                   = 10;
-  optional bool cast_shadows             = 11;
-  optional float spot_inner_angle        = 12;
-  optional float spot_outer_angle        = 13;
-  optional float spot_falloff            = 14;
-  optional uint32 id                     = 15;
+   Pose pose                     = 3;
+   Color diffuse                 = 4;
+   Color specular                = 5;
+   float attenuation_constant    = 6;
+   float attenuation_linear      = 7;
+   float attenuation_quadratic   = 8;
+   Vector3d direction               = 9;
+   float range                   = 10;
+   bool cast_shadows             = 11;
+   float spot_inner_angle        = 12;
+   float spot_outer_angle        = 13;
+   float spot_falloff            = 14;
+   uint32 id                     = 15;
 }

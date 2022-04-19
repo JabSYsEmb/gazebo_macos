@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -8,5 +8,5 @@ package gazebo.msgs;
 message SphereGeom
 {
   /// \brief Radius of the sphere.
-  required double radius  = 1;
+   double radius  = 1;
 }

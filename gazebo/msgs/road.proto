@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -11,8 +11,8 @@ import "material.proto";
 
 message Road
 {
-  required string name          = 1;
-  required double width         = 2;
+   string name          = 1;
+   double width         = 2;
   repeated Vector3d point       = 3;
-  optional Material material    = 4;
+   Material material    = 4;
 }

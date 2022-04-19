@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -23,21 +23,21 @@ import "pose.proto";
 message Factory
 {
   /// \brief SDF description in string format.
-  optional string sdf                       = 1;
+   string sdf                       = 1;
 
   /// \brief Full path to SDF file.
-  optional string sdf_filename              = 2;
+   string sdf_filename              = 2;
 
   /// \brief Pose where the entity will be spawned.
-  optional Pose pose                        = 3;
+   Pose pose                        = 3;
 
   /// \brief Name of the entity which will be updated.
-  optional string edit_name                 = 4;
+   string edit_name                 = 4;
 
   /// \brief Name of model to clone.
-  optional string clone_model_name          = 5;
+   string clone_model_name          = 5;
 
   /// \brief Whether the server is allowed to rename the model in case of
   /// overlap with existing models.
-  optional bool allow_renaming = 6 [default = true];
+   bool allow_renaming = 6;
 }

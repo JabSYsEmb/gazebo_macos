@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -9,9 +9,9 @@ import "world_reset.proto";
 
 message WorldControl
 {
-  optional bool pause           = 1;
-  optional bool step            = 2;
-  optional uint32 multi_step    = 3;
-  optional WorldReset reset     = 4;
-  optional uint32 seed          = 5;
+   bool pause           = 1;
+   bool step            = 2;
+   uint32 multi_step    = 3;
+   WorldReset reset     = 4;
+   uint32 seed          = 5;
 }

@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -20,27 +20,27 @@ message Geometry
 {
   enum Type
   {
-    BOX          = 1;
-    CYLINDER     = 2;
-    SPHERE       = 3;
-    PLANE        = 4;
-    IMAGE        = 5;
-    HEIGHTMAP    = 6;
-    MESH         = 7;
-    TRIANGLE_FAN = 8;
-    LINE_STRIP   = 9;
-    POLYLINE     = 10;
-    EMPTY        = 11;
+    BOX          = 0;
+    CYLINDER     = 1;
+    SPHERE       = 2;
+    PLANE        = 3;
+    IMAGE        = 4;
+    HEIGHTMAP    = 5;
+    MESH         = 6;
+    TRIANGLE_FAN = 7;
+    LINE_STRIP   = 8;
+    POLYLINE     = 9;
+    EMPTY        = 10;
   }
 
-  optional Type type                = 1;
-  optional BoxGeom box              = 2;
-  optional CylinderGeom cylinder    = 3;
-  optional PlaneGeom plane          = 4;
-  optional SphereGeom sphere        = 5;
-  optional ImageGeom image          = 6;
-  optional HeightmapGeom heightmap  = 7;
-  optional MeshGeom      mesh       = 8;
+   Type type                = 1;
+   BoxGeom box              = 2;
+   CylinderGeom cylinder    = 3;
+   PlaneGeom plane          = 4;
+   SphereGeom sphere        = 5;
+   ImageGeom image          = 6;
+   HeightmapGeom heightmap  = 7;
+   MeshGeom      mesh       = 8;
 
   repeated Vector3d points          = 9;
   repeated Polyline polyline        = 10;

@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 import "header.proto";
@@ -10,7 +10,7 @@ import "header.proto";
 
 message Test
 {
-  required Header header = 1;
+   Header header = 1;
 }
 
 

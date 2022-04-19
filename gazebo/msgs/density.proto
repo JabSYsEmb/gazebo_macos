@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -7,6 +7,6 @@ package gazebo.msgs;
 
 message Density
 {
-  required double density          = 1;
+   double density          = 1;
 }
 

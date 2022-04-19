@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -12,6 +12,6 @@ import "laserscan.proto";
 message LaserScanStamped
 {
   // Time when the data was captured
-  required Time time          = 1;
-  required LaserScan scan     = 2;
+   Time time          = 1;
+   LaserScan scan     = 2;
 }

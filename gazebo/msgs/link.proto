@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -19,29 +19,29 @@ import "vector3d.proto";
 
 message Link
 {
-  optional uint32 id            = 1;
-  required string name          = 2;
-  optional bool self_collide    = 3;
-  optional bool gravity         = 4;
-  optional bool kinematic       = 5;
-  optional bool enabled         = 6;
-  optional Density density      = 7;
-  optional Inertial inertial    = 8;
-  optional Pose pose            = 9;
+   uint32 id            = 1;
+   string name          = 2;
+   bool self_collide    = 3;
+   bool gravity         = 4;
+   bool kinematic       = 5;
+   bool enabled         = 6;
+   Density density      = 7;
+   Inertial inertial    = 8;
+   Pose pose            = 9;
   repeated Visual visual        = 10;
   repeated Collision collision  = 11;
   repeated Sensor sensor        = 12;
   repeated Projector projector  = 13;
-  optional bool canonical       = 14;
+   bool canonical       = 14;
 
-  /// \brief An optional vector of batteries that are attached to this link.
+  /// \brief An  vector of batteries that are attached to this link.
   repeated Battery battery      = 15;
 
   /// \brief Enable/disable wind effect on this link.
-  optional bool enable_wind     = 16;
+   bool enable_wind     = 16;
 
   /// \brief Wind linear velocity affecting this link.
-  optional Vector3d wind        = 17;
+   Vector3d wind        = 17;
 
   /// \brief Lights attached to this link
   repeated Light light          = 18;

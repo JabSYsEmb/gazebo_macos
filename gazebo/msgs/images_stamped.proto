@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -12,6 +12,6 @@ import "image.proto";
 message ImagesStamped
 {
   // Time when all the images were captured
-  required Time time          = 1;
+   Time time          = 1;
   repeated Image image        = 2;
 }

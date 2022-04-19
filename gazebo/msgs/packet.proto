@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -10,9 +10,9 @@ import "time.proto";
 
 message Packet
 {
-  required Time stamp            = 1;
-  required string type           = 2;
-  required bytes serialized_data = 3;
+   Time stamp            = 1;
+   string type           = 2;
+   bytes serialized_data = 3;
 }
 
 

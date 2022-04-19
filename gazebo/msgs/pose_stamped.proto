@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -11,8 +11,8 @@ import "pose.proto";
 
 message PoseStamped
 {
-  required Time time          = 1; // Time when the data was captured
-  required Pose pose          = 2;
+   Time time          = 1; // Time when the data was captured
+   Pose pose          = 2;
 }
 
 

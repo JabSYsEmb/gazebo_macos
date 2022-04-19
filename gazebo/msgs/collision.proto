@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -13,13 +13,13 @@ import "visual.proto";
 
 message Collision
 {
-  required uint32 id            = 1;
-  required string name          = 2;
-  optional double laser_retro   = 3;
-  optional double max_contacts  = 4;
-  optional Pose pose            = 5;
-  optional Geometry geometry    = 6;
-  optional Surface surface      = 7;
+   uint32 id            = 1;
+   string name          = 2;
+   double laser_retro   = 3;
+   double max_contacts  = 4;
+   Pose pose            = 5;
+   Geometry geometry    = 6;
+   Surface surface      = 7;
 
   repeated Visual visual        = 8;
 }

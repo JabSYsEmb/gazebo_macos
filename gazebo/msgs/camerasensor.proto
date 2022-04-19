@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -10,12 +10,12 @@ import "distortion.proto";
 
 message CameraSensor
 {
-  optional double horizontal_fov = 1;
-  optional Vector2d image_size   = 2;
-  optional string image_format   = 3;
-  optional double near_clip      = 4;
-  optional double far_clip       = 5;
-  optional bool save_enabled     = 6;
-  optional string save_path      = 7;
-  optional Distortion distortion = 8;
+   double horizontal_fov = 1;
+   Vector2d image_size   = 2;
+   string image_format   = 3;
+   double near_clip      = 4;
+   double far_clip       = 5;
+   bool save_enabled     = 6;
+   string save_path      = 7;
+   Distortion distortion = 8;
 }

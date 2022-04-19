@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -13,15 +13,15 @@ message Fog
 {
   enum FogType
   {
-    NONE         = 1;
-    LINEAR       = 2;
-    EXPONENTIAL  = 3;
-    EXPONENTIAL2 = 4;
+    NONE         = 0;
+    LINEAR       = 1;
+    EXPONENTIAL  = 2;
+    EXPONENTIAL2 = 3;
   }
-  optional FogType type = 1;
-  optional Color color = 2;
-  optional float density = 3;
-  optional float start = 4;
-  optional float end = 5;
+   FogType type = 1;
+   Color color = 2;
+   float density = 3;
+   float start = 4;
+   float end = 5;
 }
 

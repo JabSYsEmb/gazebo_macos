@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -8,19 +8,19 @@ package gazebo.msgs;
 
 message RaySensor
 {
-  optional bool display_scan            = 1;
-  optional int32 horizontal_samples     = 2;
-  optional double horizontal_resolution = 3;
-  optional double horizontal_min_angle  = 4;
-  optional double horizontal_max_angle  = 5;
+   bool display_scan            = 1;
+   int32 horizontal_samples     = 2;
+   double horizontal_resolution = 3;
+   double horizontal_min_angle  = 4;
+   double horizontal_max_angle  = 5;
 
-  optional int32 vertical_samples       = 6;
-  optional double vertical_resolution   = 7;
-  optional double vertical_min_angle    = 8;
-  optional double vertical_max_angle    = 9;
+   int32 vertical_samples       = 6;
+   double vertical_resolution   = 7;
+   double vertical_min_angle    = 8;
+   double vertical_max_angle    = 9;
 
-  optional double range_min             = 10;
-  optional double range_max             = 11; 
-  optional double range_resolution      = 12;
+   double range_min             = 10;
+   double range_max             = 11; 
+   double range_resolution      = 12;
 }
 

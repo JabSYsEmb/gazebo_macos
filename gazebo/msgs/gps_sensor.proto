@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -13,17 +13,17 @@ message GPSSensor
   message Sensing
   {
     /// \brief Horizontal noise
-    optional SensorNoise horizontal_noise = 1;
+     SensorNoise horizontal_noise = 1;
 
     /// \brief Vertical noise
-    optional SensorNoise vertical_noise   = 2;
+     SensorNoise vertical_noise   = 2;
   }
 
   /// \brief Position sensing. Consists of horizontal and vertical noise
   /// properties
-  optional Sensing position = 1;
+   Sensing position = 1;
 
   /// \brief Velocity sensing. Consists of horizontal and vertical noise
   /// properties
-  optional Sensing velocity = 2;
+   Sensing velocity = 2;
 }

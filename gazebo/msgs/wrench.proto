@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -10,7 +10,7 @@ import "vector3d.proto";
 
 message Wrench
 {
-  required Vector3d force        = 1;
-  required Vector3d torque       = 2;
-  optional Vector3d force_offset = 3;
+   Vector3d force        = 1;
+   Vector3d torque       = 2;
+   Vector3d force_offset = 3;
 }

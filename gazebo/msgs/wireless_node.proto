@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -8,7 +8,7 @@ package gazebo.msgs;
 
 message WirelessNode
 {
-  required string essid        = 1;
-  required double frequency    = 2;
-  required double signal_level = 3;
+   string essid        = 1;
+   double frequency    = 2;
+   double signal_level = 3;
 }

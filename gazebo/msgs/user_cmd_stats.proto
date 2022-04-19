@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -10,10 +10,10 @@ import "user_cmd.proto";
 message UserCmdStats
 {
   /// \brief Number of user commands in the undo list.
-  required uint32 undo_cmd_count = 1;
+   uint32 undo_cmd_count = 1;
 
   /// \brief Number of user commands in the redo list.
-  required uint32 redo_cmd_count = 2;
+   uint32 redo_cmd_count = 2;
 
   /// \brief User commands in the undo list.
   repeated UserCmd undo_cmd = 3;

@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -8,11 +8,11 @@ package gazebo.msgs;
 
 message ServerControl
 {
-  optional string save_world_name = 1;
-  optional string save_filename   = 2;
-  optional string open_filename   = 3;
-  optional bool new_world         = 4;
-  optional bool stop              = 5;
-  optional bool clone             = 6;
-  optional uint32 new_port        = 7;
+   string save_world_name = 1;
+   string save_filename   = 2;
+   string open_filename   = 3;
+   bool new_world         = 4;
+   bool stop              = 5;
+   bool clone             = 6;
+   uint32 new_port        = 7;
 }

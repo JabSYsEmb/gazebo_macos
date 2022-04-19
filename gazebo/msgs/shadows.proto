@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -12,13 +12,13 @@ message Shadows
 {
   enum ShadowType
   {
-    STENCIL_ADDITIVE   = 1;
-    STENCIL_MODULATIVE = 2;
-    TEXTURE_ADDITIVE   = 3;
-    TEXTURE_MODULATIVE = 4;
+    STENCIL_ADDITIVE   = 0;
+    STENCIL_MODULATIVE = 1;
+    TEXTURE_ADDITIVE   = 2;
+    TEXTURE_MODULATIVE = 3;
   }
-  optional ShadowType type = 5;
-  optional Color color = 6;
+   ShadowType type = 5;
+   Color color = 6;
 }
 
 

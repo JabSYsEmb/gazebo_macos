@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -9,5 +9,5 @@ import "vector3d.proto";
 
 message BoxGeom
 {
-  required Vector3d size  = 1;
+   Vector3d size  = 1;
 }

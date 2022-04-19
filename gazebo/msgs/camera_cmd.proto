@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -7,5 +7,5 @@ package gazebo.msgs;
 
 message CameraCmd
 {
-  optional string follow_model   = 1;
+   string follow_model   = 1;
 }

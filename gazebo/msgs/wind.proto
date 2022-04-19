@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -9,6 +9,6 @@ import "vector3d.proto";
 
 message Wind
 {
-  optional Vector3d linear_velocity = 1;
-  optional bool enable_wind = 2;
+   Vector3d linear_velocity = 1;
+   bool enable_wind = 2;
 }

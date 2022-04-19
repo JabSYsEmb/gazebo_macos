@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -12,9 +12,9 @@ import "quaternion.proto";
 
 message IMU
 {
-  required Time stamp                   = 1;
-  required string entity_name           = 2;
-  required Quaternion orientation       = 3;
-  required Vector3d angular_velocity    = 4;
-  required Vector3d linear_acceleration = 5;
+   Time stamp                   = 1;
+   string entity_name           = 2;
+   Quaternion orientation       = 3;
+   Vector3d angular_velocity    = 4;
+   Vector3d linear_acceleration = 5;
 }

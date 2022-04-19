@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -12,13 +12,13 @@ message Diagnostics
 {
   message DiagTime
   {
-    required string name = 1;
-    required Time elapsed = 2;
-    required Time wall = 3;
+     string name = 1;
+     Time elapsed = 2;
+     Time wall = 3;
   }
 
   repeated DiagTime time = 1;
-  required Time real_time = 2;
-  required Time sim_time = 3;
-  required double real_time_factor = 4;
+   Time real_time = 2;
+   Time sim_time = 3;
+   double real_time_factor = 4;
 }

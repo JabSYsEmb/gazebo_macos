@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 package gazebo.msgs;
 
 /// \ingroup gazebo_msgs
@@ -9,10 +9,10 @@ import "vector2d.proto";
 
 message Distortion
 {
-  optional Vector2d center  = 1;
-  optional double k1        = 2;
-  optional double k2        = 3;
-  optional double k3        = 4;
-  optional double p1        = 5;
-  optional double p2        = 6;
+   Vector2d center  = 1;
+   double k1        = 2;
+   double k2        = 3;
+   double k3        = 4;
+   double p1        = 5;
+   double p2        = 6;
 }
